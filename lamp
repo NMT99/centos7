@@ -15,7 +15,7 @@ sudo yum install epel-release yum-utils -y ;
 sudo yum-config-manager --disable 'remi-php*' ;
 sudo yum-config-manager --enable remi-php80 ;
 sudo yum -y install php php-{cli,fpm,mysqlnd,zip,devel,gd,mbstring,curl,xml,pear,bcmath,json} ;
-sudo yum install php php-mysql ;
+sudo yum -y install php php-mysql ;
 
 
 #3 mariadb
