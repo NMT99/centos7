@@ -7,6 +7,6 @@ sudo firewall-cmd --reload
 sudo systemctl enable httpd ;
 sudo systemctl start httpd ;
 echo APACHE installed successfully ! ;
-sudo yum install mariadb-server mariadb ; 
+sudo yum -y install mariadb-server mariadb ; 
 sudo systemctl start mariadb && sudo systemctl enable mariadb ;
 
