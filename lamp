@@ -1,0 +1,8 @@
+sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY* ;
+sudo yum -y update httpd ;
+sudo yum -y install httpd ; 
+sudo systemctl enable httpd ;
+sudo systemctl start httpd ;
+sudo yum install mariadb-server mariadb ; 
+sudo systemctl start mariadb && sudo systemctl enable mariadb ;
+
