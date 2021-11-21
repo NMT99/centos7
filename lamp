@@ -1,4 +1,5 @@
 sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY* ;
+sudo yum -y install nano ;
 #1 apache
 sudo yum -y update httpd ;
 sudo yum -y install httpd ; 
