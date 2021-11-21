@@ -17,9 +17,8 @@ sudo yum-config-manager --disable 'remi-php*' ;
 sudo yum-config-manager --enable remi-php80 ;
 sudo yum -y install php php-mysql ;
 sudo yum -y install php php-{cli,fpm,mysqlnd,zip,devel,gd,mbstring,curl,xml,pear,bcmath,json} ;
-
-
-
+sudo systemctl restart httpd.service ;
+echo PHP installed successfully ! ;
 #3 mariadb
 sudo yum -y install mariadb-server mariadb ; 
 sudo systemctl start mariadb && sudo systemctl enable mariadb ;
