@@ -1,5 +1,5 @@
  #sudo yum -y git
-sudo yum -y install bash-completion bash-completion-extras ;
 sudo yum -y install epel-release ;
-sudo yum install ntfs-3g ;
+sudo yum -y install bash-completion bash-completion-extras ;
+sudo yum -y install ntfs-3g ;
 
