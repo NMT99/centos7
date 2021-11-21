@@ -10,7 +10,7 @@ sudo systemctl start httpd ;
 echo APACHE installed successfully ! ;
 #2 php
 sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm ;
-sudo yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm ;
+sudo yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm ;
 sudo yum install epel-release yum-utils -y ;
 sudo yum-config-manager --disable 'remi-php*' ;
 sudo yum-config-manager --enable remi-php80 ;
