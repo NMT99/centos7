@@ -24,3 +24,4 @@ sudo yum -y install mariadb-server mariadb ;
 sudo systemctl start mariadb && sudo systemctl enable mariadb ;
 echo Type yes or enter to secure database !
 sudo mysql_secure_installation ;
+# 26 phut
