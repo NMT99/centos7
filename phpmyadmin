@@ -1,1 +1,2 @@
 sudo yum -y install phpmyadmin ;
+cau hinh phpmyadmin + systemctl restart httpd
