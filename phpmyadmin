@@ -1,5 +1,5 @@
-yum -y install git ;
-yum -y install epel-release ;
 yum -y install phpmyadmin ;
-cau hinh phpmyadmin + systemctl restart httpd
-sudo mysql -u root -p
+sudo sed -i 's|Require ip 127.0.0.1|Require all granted|g' /etc/httpd/conf.d/phpMyAdmin.conf ;
+sudo sed -i 's|Allow from 127.0.0.1|Allow from All|g' /etc/httpd/conf.d/phpMyAdmin.conf ;
+sudo systemctl reload httpd ;
+
