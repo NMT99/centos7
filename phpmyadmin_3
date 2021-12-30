@@ -1,4 +1,4 @@
-yum -y install phpmyadmin ;
+sudo yum -y install phpmyadmin ;
 sudo sed -i 's|Require ip 127.0.0.1|Require all granted|g' /etc/httpd/conf.d/phpMyAdmin.conf ;
 sudo sed -i 's|Allow from 127.0.0.1|Allow from All|g' /etc/httpd/conf.d/phpMyAdmin.conf ;
 sudo systemctl reload httpd ;
