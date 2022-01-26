@@ -11,3 +11,5 @@ PREFIX=24
 GATEWAY="192.168.217.2"
 DNS1="192.168.217.22"
 DNS2="8.8.4.4"
+
+sudo systemctl restart network
