@@ -1,15 +1,11 @@
-
-
-
-
-
+#thay doi nhung dong sau
 BOOTPROTO="dhcp"   -> BOOTPROTO="static"
-
+# ip a de xem ten card mang va dam bao dung ten
 NAME="ens33"
 DEVICE="ens33"
 ONBOOT="yes"
 
- /etc/sysconfig/network-scripts/ifcfg-eth0
+#them vao ip can doi /etc/sysconfig/network-scripts/ifcfg-eth0
 IPADDR="192.168.217.22"
 PREFIX=24
 GATEWAY="192.168.217.2"
